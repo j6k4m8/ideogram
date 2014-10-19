@@ -160,56 +160,79 @@
         };
 
         var stains = {
-            'gneg': 'Gainsboro',
-            'gpos25': 'lightgray',
-            'gpos50': 'darkgray',
-            'gpos75': 'gray',
-            'gpos100': 'black',
-            'acen': 'brown',
-            'stalk': 'url(#stalk)',
-            'gvar': 'url(#diagonal)',
-            'telo': 'brown'
+            default: {
+                'gneg': 'Gainsboro',
+                'gpos25': 'lightgray',
+                'gpos50': 'darkgray',
+                'gpos75': 'gray',
+                'gpos100': 'black',
+                'acen': 'brown',
+                'stalk': 'url(#stalk)',
+                'gvar': 'url(#diagonal)',
+                'telo': 'brown'
+            },
+            variant: {
+                'gneg': '#FFFFFF',
+                'gpos25': '#CCCCCC',
+                'gpos50': '#888888',
+                'gpos75': '#444444',
+                'gpos100': '#000000',
+                'acen': 'brown',
+                'stalk': 'firebrick',
+                'gvar': '#CCCCCC',
+                'telo': 'white'
+            },
+            bioperl: {
+                'gneg': 'white',
+                'gpos25': 'silver',
+                'gpos50': 'gray',
+                'gpos': 'gray',
+                'gpos75': 'darkgray',
+                'gpos100': 'black',
+                'acen': '#666',
+                'gvar': '#222'
+            },
+            wormabse: {
+                'gneg': 'white',
+                'gpos25': 'silver',
+                'gpos50': 'gray',
+                'gpos': 'gray',
+                'gpos75': 'darkgray',
+                'gpos100': 'black',
+                'gvar': '#666',
+                'stalk': '#666666',
+                'telo': 'blue',
+                'acen': '#666666'
+            },
+            structural: {
+                'gneg': 'white',
+                'gpos25': 'lightgray',
+                'gpos50': 'gray',
+                'gpos75': 'darkgray',
+                'gpos100': 'black',
+                'acen': 'red',
+                'stalk': 'lightblue',
+                'telo': 'black',
+                'gvar': 'purple'
+            },
+            rainbow: {
+                'gneg': 'red',
+                'gpos25': 'orange',
+                'gpos50': 'yellow',
+                'gpos75': 'green',
+                'gpos100': 'indigo',
+                'acen': 'violet',
+                'stalk': 'steelblue',
+                'gvar': 'purple',
+                'telo': 'black'
+            }
         };
 
-        var stains1 = {
-            'gneg': '#FFFFFF',
-            'gpos25': '#CCCCCC',
-            'gpos50': '#888888',
-            'gpos75': '#444444',
-            'gpos100': '#000000',
-            'acen': 'brown',
-            'stalk': 'firebrick',
-            'gvar': '#CCCCCC',
-            'telo': 'white'
-        };
-
-        // bioperl: gneg:white gpos25:silver gpos50:gray gpos:gray gpos75:darkgray gpos100:black acen:cen gvar:var
-        // wormabse: gneg:white gpos25:silver gpos50:gray gpos:gray gpos75:darkgray gpos100:black gvar:var stalk:#666666
-
-        //[default] #CCC
-        //gneg      #FFF
-        //gpos      #000
-        //gpos100   #000
-        //gpos25    #CCC
-        //gpos33    #AAA
-        //gpos50    #888
-        //gpos66    #666
-        //gpos75    #444
-        //gvar      #CCC
-
-
-        //gneg — white
-        //gpos25 — light gray
-        //gpos50 — medium gray
-        //gpos75 — dark gray
-        //gpos100 — black
-        //acen — red (centromere)
-        //stalk — light blue (regions with repeats)
-        //gvar — indented region
+        chosenStain = 'rainbow';
 
 
         //Width and height
-        var w = 400;
+        var w = 900;
         var h = 100;
         var padding = 30;
         var W = w-(2*padding);
@@ -227,43 +250,49 @@
 
             var cent=[];
 
-                    var point1={
-                        "x":centromere[0].start,
-                        "y":0};
-                    var point2={
-                        "x":centromere[0].start,
-                        "y":50};
-                    var point3={
-                        "x":centromere[0].end,
-                        "y":25};
-                    var abc = [point1, point2, point3];
+            var point1 = {
+                "x": centromere[0].start,
+                "y": 0
+            };
+            var point2 = {
+                "x": centromere[0].start,
+                "y": 50
+            };
+            var point3 = {
+                "x": centromere[0].end,
+                "y": 25
+            };
 
-                cent.push(abc);
-                    var point1={
-                        "x":centromere[(1)].start,
-                        "y":25};
-                    var point2={
-                        "x":centromere[(1)].end,
-                        "y":0};
-                    var point3={
-                        "x":centromere[(1)].end,
-                        "y":50};
-                    var abc = [point1, point2, point3];
-                cent.push(abc);
+            var abc = [point1, point2, point3];
+            cent.push(abc);
 
-                //Create SVG element
+            var point1 = {
+                "x": centromere[1].start,
+                "y": 25
+            };
+            var point2 = {
+                "x": centromere[1].end,
+                "y": 0
+            };
+            var point3 = {
+                "x": centromere[1].end,
+                "y": 50
+            };
+
+            var abc = [point1, point2, point3];
+            cent.push(abc);
+
             var svg = d3.select("body")
                         .append("svg")
                         .attr("width", w)
                         .attr("height", h);
-
 
             var chrGroup = svg.append("g")
                         .attr("transform", "translate(0,25)");
 
                 //chromosome outline
             var outlineP = [
-                {"x": padding,   "y": 0},  { "x": padding,  "y": 50},
+                {"x": padding, "y": 0},  { "x": padding, "y": 50},
                 { "x": (cent[0][0].x),  "y": 50}, { "x": (cent[0][2].x),  "y": 25},
                 { "x": (cent[0][1].x),  "y": 0}, {"x": padding,   "y": 0}];
 
@@ -273,17 +302,18 @@
                 { "x": chrLength,  "y": 50}, {"x": chrLength,   "y": 0}];
 
                 //telomeres; semi-circles
+
             var r = 25;
 
             var pTelo = chrGroup.append("defs").append("linearGradient").attr("id", "pTelo")
                 .attr("x1", "0%").attr("x2", "100%").attr("y1", "0%").attr("y2", "0%");
-                pTelo.append("stop").attr("offset", "50%").style("stop-color", (stains.telo));
+                pTelo.append("stop").attr("offset", "50%").style("stop-color", (stains[chosenStain].telo));
                 pTelo.append("stop").attr("offset", "50%").style("stop-color", "white");
 
             var qTelo = chrGroup.append("defs").append("linearGradient").attr("id", "qTelo")
                 .attr("x1", "0%").attr("x2", "100%").attr("y1", "0%").attr("y2", "0%");
                 qTelo.append("stop").attr("offset", "50%").style("stop-color", "white");
-                qTelo.append("stop").attr("offset", "50%").style("stop-color", (stains.telo));
+                qTelo.append("stop").attr("offset", "50%").style("stop-color", (stains[chosenStain].telo));
 
             chrGroup.append("circle")
                 .attr("cx", padding)
@@ -301,54 +331,38 @@
             var tip = d3.tip()
                 .attr('class', 'd3-tip')
                 .offset([-10, 0])
-                .html(function(d) {return "<span style='color:black'>" + d.alias + "</span>";});
+                .html(function(d) {return "<span style='color:" + stains[chosenStain]['telo'] + "'>" + d.alias + "</span>";});
 
             chrGroup.call(tip);
 
 
             //Create rectangle (exons)
             chrGroup.selectAll("rect")
-               .data(noCentromere)
-               .enter()
-               .append("rect")
-
-               .attr("x", function(d) {
-                return d.start * ((W)/chrLength) + padding;  //Bar start position * chr length to svg length ratio
-            })
-               .attr("y", 0)
-               .attr("height", 50)
-               .attr("width", function(d) {
-                return (d.end-d.start) * (W/chrLength) ;  //Bar width
-            })
-                .style("fill", function(d) {return stains[d.stain];}) //"url(#gradient)"
-                .on("mouseover", function(){d3.select(this).style("fill", "orange");})
-                .on("mouseout", function(){d3.select(this).style("fill", function(d) {return stains[d.stain];})})
+                .data(noCentromere)
+                .enter()
+                .append("rect")
+                .attr("x", function(d) { return d.start * ((W)/chrLength) + padding })
+                .attr("y", 0)
+                .attr("height", 50)
+                .attr("width", function(d) {
+                    return (d.end-d.start) * (W/chrLength);
+                })
+                .style("fill", function(d) { return stains[chosenStain][d.stain] })
                 .on('mouseover', tip.show)
-                .on('mouseout', tip.hide)
-            ;
+                .on('mouseout', tip.hide);
 
              var lineFunction = d3.svg.line()
                 .x(function(d) {return d.x * ((W)/chrLength) + padding;})
                 .y(function(d) {return d.y;})
                 .interpolate("linear");
 
-            //The line SVG Path we draw
-
             var lineGraph = chrGroup.append("path")
                 .attr("d", lineFunction(cent[0]))
-                .attr("stroke", "none")
-                .attr("stroke-width", 1)
-                .attr("fill", "brown")
-                .on("mouseover", function(){d3.select(this).style("fill", "orange");})
-                .on("mouseout", function(){d3.select(this).style("fill", "brown");});
+                .attr('fill', stains[chosenStain]['stalk']);
 
             lineGraph = chrGroup.append("path")
                 .attr("d", lineFunction(cent[1]))
-                .attr("stroke", "none")
-                .attr("stroke-width", 1)
-                .attr("fill", "brown")
-                .on("mouseover", function(){d3.select(this).style("fill", "orange");})
-                .on("mouseout", function(){d3.select(this).style("fill", "brown");});
+                .attr('fill', stains[chosenStain]['stalk']);
 
             lineGraph = chrGroup.append("path")
                 .attr("d", lineFunction(outlineP))
@@ -360,56 +374,9 @@
             lineGraph = chrGroup.append("path")
                 .attr("d", lineFunction(outlineQ))
                 .attr("stroke", "black")
+                .attr("fill", "none")
                 .attr("stroke-width", 0.5)
-                .attr("fill", "none");
-
-
-            //gradient info
-            var gradient = svg.append("svg:defs")
-                .append("svg:linearGradient")
-                .attr("id", "gradient")
-                .attr("x1", "0%")
-                .attr("y1", "50%")
-                .attr("x2", "100%")
-                .attr("y2", "50%")
-                .attr("spreadMethod", "pad");
-
-                gradient.append("svg:stop")
-                .data(noCentromere)
-                .attr("offset", "0%")
-                .attr("stop-color", 'function(d) {return stains[d.stain];}')
-                .attr("stop-opacity", 1);
-
-                gradient.append("svg:stop")
-                .data(noCentromere)
-                .attr("offset", "50%")
-                .attr("stop-color", "gray")
-                .attr("stop-opacity", 1);
-
-                gradient.append("svg:stop")
-                .data(noCentromere)
-                .attr("offset", "100%")
-                .attr("stop-color", 'function(d) {return stains[d.stain];}')
-                .attr("stop-opacity", 1);
-
-            svg.append("defs").append("pattern")
-                .attr('id', 'diagonal')
-                .attr('patternUnits', 'userSpaceOnUse')
-                .attr('width', 4)
-                .attr('height', 4)
-                .append('path')
-                .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
-                .attr('stroke', 'DarkSlateGray')
-                .attr('stroke-width', 1);
-            svg.append("defs").append("pattern")
-                .attr('id', 'stalk')
-                .attr('patternUnits', 'userSpaceOnUse')
-                .attr('width', 8)
-                .attr('height', 8)
-                .append('path')
-                .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
-                .attr('stroke', 'Gray')
-                .attr('stroke-width', 0.5);
+                .attr("stroke-linejoin", "round");
         }
 
         updateGraph(data.chr10);
