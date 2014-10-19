@@ -47,7 +47,7 @@
 
 <body>
     <script>
-        var JSON = {
+        var data = {
             "chr1": [
                 {"start" :0, "end" :2300000, "alias":"p36.33", "stain" :"gneg"},
                 {"start" :2300000, "end" :5400000, "alias":"p36.32", "stain" :"gpos25"},
@@ -159,10 +159,6 @@
             ]
         };
 
-
-        var cytoband = JSON.chr10;
-        //Object.keys(JSON) or Object.keys(JSON)[0] to access each chromosome
-
         var stains = {
             'gneg': 'Gainsboro',
             'gpos25': 'lightgray',
@@ -220,35 +216,31 @@
         var H = h-(2*padding);
 
         function getObjects(obj, key, val) {
-            var objects = [];
-            for (var i in obj) {
-                if (!obj.hasOwnProperty(i)) continue;
-                if (typeof obj[i] == 'object') {
-                    objects = objects.concat(getObjects(obj[i], key, val));
-                } else
-                //if key matches and value matches or if key matches and value is not passed (eliminating the case where key matches but passed value does not)
-                if (i == key && obj[i] == val || i == key && val == '') { //
-                    objects.push(obj);
-                } else if (obj[i] == val && key == ''){
-                    //only add if the object is not already in the array
-                    if (objects.lastIndexOf(obj) == -1){
-                        objects.push(obj);
-                    }
-                }
-            }
-            return objects;
+            // var objects = [];
+            // for (var i in obj) {
+            //     if (!obj.hasOwnProperty(i)) continue;
+            //     if (typeof obj[i] == 'object') {
+            //         objects = objects.concat(getObjects(obj[i], key, val));
+            //     } else
+            //     //if key matches and value matches or if key matches and value is not passed (eliminating the case where key matches but passed value does not)
+            //     if (i == key && obj[i] == val || i == key && val == '') { //
+            //         objects.push(obj);
+            //     } else if (obj[i] == val && key == ''){
+            //         //only add if the object is not already in the array
+            //         if (objects.lastIndexOf(obj) == -1){
+            //             objects.push(obj);
+            //         }
+            //     }
+            // }
+            // console.log(objects);
+
+            return _(obj).where({key: val});
         }
 
-            Array.prototype.diff = function(a) {
+        Array.prototype.diff = function(a) {
             return this.filter(function(i) {return a.indexOf(i) < 0;});
         };
 
-        var dispatch = d3.dispatch("load", "chromchange");
-
-        dispatch.on("load.rect", function(cytoband) {
-
-
-        });
 
         function updateGraph(cytoband) {
 
@@ -258,6 +250,7 @@
             var chrLength = cytoband[(cytoband.length-1)].end;
 
             var cent=[];
+
                     var point1={
                         "x":centromere[(0)].start,
                         "y":0};
@@ -268,6 +261,7 @@
                         "x":centromere[(0)].end,
                         "y":25};
                     var abc = [point1, point2, point3];
+
                 cent.push(abc);
                     var point1={
                         "x":centromere[(1)].start,
@@ -442,7 +436,7 @@
                 .attr('stroke-width', 0.5);
         }
 
-        updateGraph(JSON.chr10);
+        updateGraph(data.chr10);
 
     </script>
 
