@@ -11,9 +11,6 @@
 </head>
 <script language="javascript" type="text/javascript"></script>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-
-<script src="http://knockoutjs.com/downloads/knockout-3.0.0.js"></script>
-
 <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 
 <body>
@@ -33,8 +30,9 @@
         background: #fff;
         color: #fff;
         border-radius: 2px;
+        font-family: sans-serif;
     }
-/* Creates a small triangle extender for the tooltip */
+
     .d3-tip:after {
         box-sizing: border-box;
         display: inline;
@@ -46,7 +44,7 @@
         position: absolute;
         text-align: center;
     }
-/* Style northward tooltips differently */
+
     .d3-tip.n:after {
         margin: -1px 0 0 0;
         top: 100%;
@@ -176,14 +174,14 @@ var cytoband = JSON.chr10;
 //Object.keys(JSON) or Object.keys(JSON)[0] to access each chromosome
 
 var stains = {
-    'gneg': 'Gainsboro', //Gainsboro
+    'gneg': 'Gainsboro',
     'gpos25': 'lightgray',
     'gpos50': 'darkgray',
     'gpos75': 'gray',
     'gpos100': 'black',
     'acen': 'brown',
     'stalk': 'url(#stalk)',
-    'gvar': 'url(#diagonal)',//url(#diagonal)
+    'gvar': 'url(#diagonal)',
     'telo': 'brown'
 };
 
@@ -202,15 +200,15 @@ var stains1 = {
 // bioperl: gneg:white gpos25:silver gpos50:gray gpos:gray gpos75:darkgray gpos100:black acen:cen gvar:var
 // wormabse: gneg:white gpos25:silver gpos50:gray gpos:gray gpos75:darkgray gpos100:black gvar:var stalk:#666666
 
-//[default]	#CCCCCC
-//gneg	#FFFFFF
-//gpos & gpos100	#000000
-//gpos25	#CCCCCC
-//gpos33	#AAAAAA
-//gpos50	#888888
-//gpos66	#666666
-//gpos75	#444444
-//gvar	#CCCCCC
+//[default] #CCCCCC
+//gneg  #FFFFFF
+//gpos & gpos100    #000000
+//gpos25    #CCCCCC
+//gpos33    #AAAAAA
+//gpos50    #888888
+//gpos66    #666666
+//gpos75    #444444
+//gvar  #CCCCCC
 
 
 //gneg — white
@@ -263,7 +261,7 @@ dispatch.on("load.rect", function(cytoband) {
 
 function updateGraph(cytoband) {
 
-var centromere =  getObjects(cytoband, 'stain', 'acen');
+var centromere = getObjects(cytoband, 'stain', 'acen');
 var cytobandminuscent = cytoband.diff(centromere);
 
 var chrLength = cytoband[(cytoband.length-1)].end;
@@ -451,19 +449,9 @@ svg.append("defs").append("pattern")
     .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
     .attr('stroke', 'Gray')
     .attr('stroke-width', 0.5);
-
-
-
 }
 
 updateGraph(JSON.chr1);
-
-d3.select('#opts')
-  .on('change', function() {
-   console.log(event);
-});
-
-
 
 </script>
 
@@ -472,7 +460,7 @@ d3.select('#opts')
 </noscript>
 
 <select id = "opts">
-<option value="JSON.chr1"selected="selected">data1</option>
+<option value="JSON.chr1">data1</option>
 <option value="JSON.chr10">data2</option>
 <option value="JSON.chr2">data3</option>
 
