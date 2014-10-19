@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Ideogram</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+</head>
+<script language="javascript" type="text/javascript"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+<script src="http://knockoutjs.com/downloads/knockout-3.0.0.js"></script>
+
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
+<body>
+<style>
+    path  {
+        shape-rendering="optimizeSpeed";
+    }
+    button  {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    .d3-tip {
+        line-height: 1;
+        font-weight: normal;
+        padding: 2px;
+        background: #fff;
+        color: #fff;
+        border-radius: 2px;
+    }
+/* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 8px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+    }
+/* Style northward tooltips differently */
+    .d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+    }
+</style>
+
+
+<script>
+var JSON =
+{
+"chr1": [
+    {"start" :0, "end" :2300000, "alias":"p36.33", "stain" :"gneg"},
+    {"start" :2300000, "end" :5400000, "alias":"p36.32", "stain" :"gpos25"},
+    {"start" :5400000, "end" :7200000, "alias":"p36.31", "stain" :"gneg"},
+    {"start" :7200000, "end" :9200000, "alias":"p36.23", "stain" :"gpos25"},
+    {"start" :9200000, "end" :12700000, "alias":"p36.22", "stain" :"gneg"},
+    {"start" :12700000, "end" :16200000, "alias":"p36.21", "stain" :"gpos50"},
+    {"start" :16200000, "end" :20400000, "alias":"p36.13", "stain" :"gneg"},
+    {"start" :20400000, "end" :23900000, "alias":"p36.12", "stain" :"gpos25"},
+    {"start" :23900000, "end" :28000000, "alias":"p36.11", "stain" :"gneg"},
+    {"start" :28000000, "end" :30200000, "alias":"p35.3", "stain" :"gpos25"},
+    {"start" :30200000, "end" :32400000, "alias":"p35.2", "stain" :"gneg"},
+    {"start" :32400000, "end" :34600000, "alias":"p35.1", "stain" :"gpos25"},
+    {"start" :34600000, "end" :40100000, "alias":"p34.3", "stain" :"gneg"},
+    {"start" :40100000, "end" :44100000, "alias":"p34.2", "stain" :"gpos25"},
+    {"start" :44100000, "end" :46800000, "alias":"p34.1", "stain" :"gneg"},
+    {"start" :46800000, "end" :50700000, "alias":"p33", "stain" :"gpos75"},
+    {"start" :50700000, "end" :56100000, "alias":"p32.3", "stain" :"gneg"},
+    {"start" :56100000, "end" :59000000, "alias":"p32.2", "stain" :"gpos50"},
+    {"start" :59000000, "end" :61300000, "alias":"p32.1", "stain" :"gneg"},
+    {"start" :61300000, "end" :68900000, "alias":"p31.3", "stain" :"gpos50"},
+    {"start" :68900000, "end" :69700000, "alias":"p31.2", "stain" :"gneg"},
+    {"start" :69700000, "end" :84900000, "alias":"p31.1", "stain" :"gpos100"},
+    {"start" :84900000, "end" :88400000, "alias":"p22.3", "stain" :"gneg"},
+    {"start" :88400000, "end" :92000000, "alias":"p22.2", "stain" :"gpos75"},
+    {"start" :92000000, "end" :94700000, "alias":"p22.1", "stain" :"gneg"},
+    {"start" :94700000, "end" :99700000, "alias":"p21.3", "stain" :"gpos75"},
+    {"start" :99700000, "end" :102200000, "alias":"p21.2", "stain" :"gneg"},
+    {"start" :102200000, "end" :107200000, "alias":"p21.1", "stain" :"gpos100"},
+    {"start" :107200000, "end" :111800000, "alias":"p13.3", "stain" :"gneg"},
+    {"start" :111800000, "end" :116100000, "alias":"p13.2", "stain" :"gpos50"},
+    {"start" :116100000, "end" :117800000, "alias":"p13.1", "stain" :"gneg"},
+    {"start" :117800000, "end" :120600000, "alias":"p12", "stain" :"gpos50"},
+    {"start" :120600000, "end" :121500000, "alias":"p11.2", "stain" :"gneg"},
+    {"start" :121500000, "end" :125000000, "alias":"p11.1", "stain" :"acen"},
+    {"start" :125000000, "end" :128900000, "alias":"q11", "stain" :"acen"},
+    {"start" :128900000, "end" :142600000, "alias":"q12", "stain" :"gvar"},
+    {"start" :142600000, "end" :147000000, "alias":"q21.1", "stain" :"gneg"},
+    {"start" :147000000, "end" :150300000, "alias":"q21.2", "stain" :"gpos50"},
+    {"start" :150300000, "end" :155000000, "alias":"q21.3", "stain" :"gneg"},
+    {"start" :155000000, "end" :156500000, "alias":"q22", "stain" :"gpos50"},
+    {"start" :156500000, "end" :159100000, "alias":"q23.1", "stain" :"gneg"},
+    {"start" :159100000, "end" :160500000, "alias":"q23.2", "stain" :"gpos50"},
+    {"start" :160500000, "end" :165500000, "alias":"q23.3", "stain" :"gneg"},
+    {"start" :165500000, "end" :167200000, "alias":"q24.1", "stain" :"gpos50"},
+    {"start" :167200000, "end" :170900000, "alias":"q24.2", "stain" :"gneg"},
+    {"start" :170900000, "end" :172900000, "alias":"q24.3", "stain" :"gpos75"},
+    {"start" :172900000, "end" :176000000, "alias":"q25.1", "stain" :"gneg"},
+    {"start" :176000000, "end" :180300000, "alias":"q25.2", "stain" :"gpos50"},
+    {"start" :180300000, "end" :185800000, "alias":"q25.3", "stain" :"gneg"},
+    {"start" :185800000, "end" :190800000, "alias":"q31.1", "stain" :"gpos100"},
+    {"start" :190800000, "end" :193800000, "alias":"q31.2", "stain" :"gneg"},
+    {"start" :193800000, "end" :198700000, "alias":"q31.3", "stain" :"gpos100"},
+    {"start" :198700000, "end" :207200000, "alias":"q32.1", "stain" :"gneg"},
+    {"start" :207200000, "end" :211500000, "alias":"q32.2", "stain" :"gpos25"},
+    {"start" :211500000, "end" :214500000, "alias":"q32.3", "stain" :"gneg"},
+    {"start" :214500000, "end" :224100000, "alias":"q41", "stain" :"gpos100"},
+    {"start" :224100000, "end" :224600000, "alias":"q42.11", "stain" :"gneg"},
+    {"start" :224600000, "end" :227000000, "alias":"q42.12", "stain" :"gpos25"},
+    {"start" :227000000, "end" :230700000, "alias":"q42.13", "stain" :"gneg"},
+    {"start" :230700000, "end" :234700000, "alias":"q42.2", "stain" :"gpos50"},
+    {"start" :234700000, "end" :236600000, "alias":"q42.3", "stain" :"gneg"},
+    {"start" :236600000, "end" :243700000, "alias":"q43", "stain" :"gpos75"},
+    {"start" :243700000, "end" :249250621, "alias":"q44", "stain" :"gneg"}
+],
+"chr10": [
+    {"start" :0, "end" :3000000, "alias":"p15.3", "stain" :"gneg"},
+    {"start" :3000000, "end" :3800000, "alias":"p15.2", "stain" :"gpos25"},
+    {"start" :3800000, "end" :6600000, "alias":"p15.1", "stain" :"gneg"},
+    {"start" :6600000, "end" :12200000, "alias":"p14", "stain" :"gpos75"},
+    {"start" :12200000, "end" :17300000, "alias":"p13", "stain" :"gneg"},
+    {"start" :17300000, "end" :18600000, "alias":"p12.33", "stain" :"gpos75"},
+    {"start" :18600000, "end" :18700000, "alias":"p12.32", "stain" :"gneg"},
+    {"start" :18700000, "end" :22600000, "alias":"p12.31", "stain" :"gpos75"},
+    {"start" :22600000, "end" :24600000, "alias":"p12.2", "stain" :"gneg"},
+    {"start" :24600000, "end" :29600000, "alias":"p12.1", "stain" :"gpos50"},
+    {"start" :29600000, "end" :31300000, "alias":"p11.23", "stain" :"gneg"},
+    {"start" :31300000, "end" :34400000, "alias":"p11.22", "stain" :"gpos25"},
+    {"start" :34400000, "end" :38000000, "alias":"p11.21", "stain" :"gneg"},
+    {"start" :38000000, "end" :40200000, "alias":"p11.1", "stain" :"acen"},
+    {"start" :40200000, "end" :42300000, "alias":"q11.1", "stain" :"acen"},
+    {"start" :42300000, "end" :46100000, "alias":"q11.21", "stain" :"gneg"},
+    {"start" :46100000, "end" :49900000, "alias":"q11.22", "stain" :"gpos25"},
+    {"start" :49900000, "end" :52900000, "alias":"q11.23", "stain" :"gneg"},
+    {"start" :52900000, "end" :61200000, "alias":"q21.1", "stain" :"gpos100"},
+    {"start" :61200000, "end" :64500000, "alias":"q21.2", "stain" :"gneg"},
+    {"start" :64500000, "end" :70600000, "alias":"q21.3", "stain" :"gpos100"},
+    {"start" :70600000, "end" :74900000, "alias":"q22.1", "stain" :"gneg"},
+    {"start" :74900000, "end" :77700000, "alias":"q22.2", "stain" :"gpos50"},
+    {"start" :77700000, "end" :82000000, "alias":"q22.3", "stain" :"gneg"},
+    {"start" :82000000, "end" :87900000, "alias":"q23.1", "stain" :"gpos100"},
+    {"start" :87900000, "end" :89500000, "alias":"q23.2", "stain" :"gneg"},
+    {"start" :89500000, "end" :92900000, "alias":"q23.31", "stain" :"gpos75"},
+    {"start" :92900000, "end" :94100000, "alias":"q23.32", "stain" :"gneg"},
+    {"start" :94100000, "end" :97000000, "alias":"q23.33", "stain" :"gpos50"},
+    {"start" :97000000, "end" :99300000, "alias":"q24.1", "stain" :"gneg"},
+    {"start" :99300000, "end" :101900000, "alias":"q24.2", "stain" :"gpos50"},
+    {"start" :101900000, "end" :103000000, "alias":"q24.31", "stain" :"gneg"},
+    {"start" :103000000, "end" :104900000, "alias":"q24.32", "stain" :"gpos25"},
+    {"start" :104900000, "end" :105800000, "alias":"q24.33", "stain" :"gneg"},
+    {"start" :105800000, "end" :111900000, "alias":"q25.1", "stain" :"gpos100"},
+    {"start" :111900000, "end" :114900000, "alias":"q25.2", "stain" :"gneg"},
+    {"start" :114900000, "end" :119100000, "alias":"q25.3", "stain" :"gpos75"},
+    {"start" :119100000, "end" :121700000, "alias":"q26.11", "stain" :"gneg"},
+    {"start" :121700000, "end" :123100000, "alias":"q26.12", "stain" :"gpos50"},
+    {"start" :123100000, "end" :127500000, "alias":"q26.13", "stain" :"gneg"},
+    {"start" :127500000, "end" :130600000, "alias":"q26.2", "stain" :"gpos50"},
+    {"start" :130600000, "end" :135534747, "alias":"q26.3", "stain" :"gneg"}
+]
+}
+
+
+
+
+var cytoband = JSON.chr10;
+//Object.keys(JSON) or Object.keys(JSON)[0] to access each chromosome
+
+var stains = {
+    'gneg': 'Gainsboro', //Gainsboro
+    'gpos25': 'lightgray',
+    'gpos50': 'darkgray',
+    'gpos75': 'gray',
+    'gpos100': 'black',
+    'acen': 'brown',
+    'stalk': 'url(#stalk)',
+    'gvar': 'url(#diagonal)',//url(#diagonal)
+    'telo': 'brown'
+};
+
+var stains1 = {
+    'gneg': '#FFFFFF',
+    'gpos25': '#CCCCCC',
+    'gpos50': '#888888',
+    'gpos75': '#444444',
+    'gpos100': '#000000',
+    'acen': 'brown',
+    'stalk': 'firebrick',
+    'gvar': '#CCCCCC',
+    'telo': 'white'
+};
+
+// bioperl: gneg:white gpos25:silver gpos50:gray gpos:gray gpos75:darkgray gpos100:black acen:cen gvar:var
+// wormabse: gneg:white gpos25:silver gpos50:gray gpos:gray gpos75:darkgray gpos100:black gvar:var stalk:#666666
+
+//[default]	#CCCCCC
+//gneg	#FFFFFF
+//gpos & gpos100	#000000
+//gpos25	#CCCCCC
+//gpos33	#AAAAAA
+//gpos50	#888888
+//gpos66	#666666
+//gpos75	#444444
+//gvar	#CCCCCC
+
+
+//gneg — white
+//gpos25 — light gray
+//gpos50 — medium gray
+//gpos75 — dark gray
+//gpos100 — black
+//acen — red (centromere)
+//stalk — light blue (regions with repeats)
+//gvar — indented region
+
+
+//Width and height
+var w = 400;
+var h = 100;
+var padding = 30;
+var W = w-(2*padding);
+var H = h-(2*padding);
+
+function getObjects(obj, key, val) {
+    var objects = [];
+    for (var i in obj) {
+        if (!obj.hasOwnProperty(i)) continue;
+        if (typeof obj[i] == 'object') {
+            objects = objects.concat(getObjects(obj[i], key, val));
+        } else
+        //if key matches and value matches or if key matches and value is not passed (eliminating the case where key matches but passed value does not)
+        if (i == key && obj[i] == val || i == key && val == '') { //
+            objects.push(obj);
+        } else if (obj[i] == val && key == ''){
+            //only add if the object is not already in the array
+            if (objects.lastIndexOf(obj) == -1){
+                objects.push(obj);
+            }
+        }
+    }
+    return objects;
+}
+
+    Array.prototype.diff = function(a) {
+    return this.filter(function(i) {return a.indexOf(i) < 0;});
+};
+
+var dispatch = d3.dispatch("load", "chromchange");
+
+dispatch.on("load.rect", function(cytoband) {
+
+
+});
+
+function updateGraph(cytoband) {
+
+var centromere =  getObjects(cytoband, 'stain', 'acen');
+var cytobandminuscent = cytoband.diff(centromere);
+
+var chrLength = cytoband[(cytoband.length-1)].end;
+
+var cent=[];
+        var point1={
+            "x":centromere[(0)].start,
+            "y":0};
+        var point2={
+            "x":centromere[(0)].start,
+            "y":50};
+        var point3={
+            "x":centromere[(0)].end,
+            "y":25};
+        var abc = [point1, point2, point3];
+    cent.push(abc);
+        var point1={
+            "x":centromere[(1)].start,
+            "y":25};
+        var point2={
+            "x":centromere[(1)].end,
+            "y":0};
+        var point3={
+            "x":centromere[(1)].end,
+            "y":50};
+        var abc = [point1, point2, point3];
+    cent.push(abc);
+
+    //Create SVG element
+var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+
+
+var chrGroup = svg.append("g")
+            .attr("transform", "translate(0,25)");
+
+    //chromosome outline
+var outlineP = [
+    {"x": padding,   "y": 0},  { "x": padding,  "y": 50},
+    { "x": (cent[0][0].x),  "y": 50}, { "x": (cent[0][2].x),  "y": 25},
+    { "x": (cent[0][1].x),  "y": 0}, {"x": padding,   "y": 0}];
+
+var outlineQ = [
+    {"x": chrLength,   "y": 0},  { "x": cent[1][2].x,  "y": 0},
+    { "x": cent[1][0].x,  "y": 25}, { "x": cent[1][1].x,  "y": 50},
+    { "x": chrLength,  "y": 50}, {"x": chrLength,   "y": 0}];
+
+    //telomeres; semi-circles
+var r = 25;
+
+var pTelo = chrGroup.append("defs").append("linearGradient").attr("id", "pTelo")
+    .attr("x1", "0%").attr("x2", "100%").attr("y1", "0%").attr("y2", "0%");
+    pTelo.append("stop").attr("offset", "50%").style("stop-color", (stains.telo));
+    pTelo.append("stop").attr("offset", "50%").style("stop-color", "white");
+
+var qTelo = chrGroup.append("defs").append("linearGradient").attr("id", "qTelo")
+    .attr("x1", "0%").attr("x2", "100%").attr("y1", "0%").attr("y2", "0%");
+    qTelo.append("stop").attr("offset", "50%").style("stop-color", "white");
+    qTelo.append("stop").attr("offset", "50%").style("stop-color", (stains.telo));
+
+chrGroup.append("circle")
+    .attr("cx", padding)
+    .attr("cy", r)
+    .attr("r", r)
+    .attr("stroke", "none")
+    .attr("fill", "url(#pTelo)");
+chrGroup.append("circle")
+    .attr("cx", W+padding)
+    .attr("cy", r)
+    .attr("r", r)
+    .attr("stroke", "none")
+    .attr("fill", "url(#qTelo)");
+
+var tip = d3.tip()
+    .attr('class', 'd3-tip')
+    .offset([-10, 0])
+    .html(function(d) {return "<span style='color:black'>" + d.alias + "</span>";});
+
+chrGroup.call(tip);
+
+
+//Create rectangle (exons)
+chrGroup.selectAll("rect")
+   .data(cytobandminuscent)
+   .enter()
+   .append("rect")
+
+   .attr("x", function(d) {
+    return d.start * ((W)/chrLength) + padding;  //Bar start position * chr length to svg length ratio
+})
+   .attr("y", 0)
+   .attr("height", 50)
+   .attr("width", function(d) {
+    return (d.end-d.start) * (W/chrLength) ;  //Bar width
+})
+    .style("fill", function(d) {return stains[d.stain];}) //"url(#gradient)"
+    .on("mouseover", function(){d3.select(this).style("fill", "orange");})
+    .on("mouseout", function(){d3.select(this).style("fill", function(d) {return stains[d.stain];})})
+    .on('mouseover', tip.show)
+    .on('mouseout', tip.hide)
+;
+
+ var lineFunction = d3.svg.line()
+    .x(function(d) {return d.x * ((W)/chrLength) + padding;})
+    .y(function(d) {return d.y;})
+    .interpolate("linear");
+
+//The line SVG Path we draw
+
+var lineGraph = chrGroup.append("path")
+    .attr("d", lineFunction(cent[0]))
+    .attr("stroke", "none")
+    .attr("stroke-width", 1)
+    .attr("fill", "brown")
+    .on("mouseover", function(){d3.select(this).style("fill", "orange");})
+    .on("mouseout", function(){d3.select(this).style("fill", "brown");});
+
+lineGraph = chrGroup.append("path")
+    .attr("d", lineFunction(cent[1]))
+    .attr("stroke", "none")
+    .attr("stroke-width", 1)
+    .attr("fill", "brown")
+    .on("mouseover", function(){d3.select(this).style("fill", "orange");})
+    .on("mouseout", function(){d3.select(this).style("fill", "brown");});
+
+lineGraph = chrGroup.append("path")
+    .attr("d", lineFunction(outlineP))
+    .attr("stroke", "black")
+    .attr("stroke-width", 0.5)
+    .attr("fill", "none")
+    .attr("stroke-linejoin", "round");
+
+lineGraph = chrGroup.append("path")
+    .attr("d", lineFunction(outlineQ))
+    .attr("stroke", "black")
+    .attr("stroke-width", 0.5)
+    .attr("fill", "none");
+
+
+//gradient info
+var gradient = svg.append("svg:defs")
+    .append("svg:linearGradient")
+    .attr("id", "gradient")
+    .attr("x1", "0%")
+    .attr("y1", "50%")
+    .attr("x2", "100%")
+    .attr("y2", "50%")
+    .attr("spreadMethod", "pad");
+
+    gradient.append("svg:stop")
+    .data(cytobandminuscent)
+    .attr("offset", "0%")
+    .attr("stop-color", 'function(d) {return stains[d.stain];}')
+    .attr("stop-opacity", 1);
+
+    gradient.append("svg:stop")
+    .data(cytobandminuscent)
+    .attr("offset", "50%")
+    .attr("stop-color", "gray")
+    .attr("stop-opacity", 1);
+
+    gradient.append("svg:stop")
+    .data(cytobandminuscent)
+    .attr("offset", "100%")
+    .attr("stop-color", 'function(d) {return stains[d.stain];}')
+    .attr("stop-opacity", 1);
+
+svg.append("defs").append("pattern")
+    .attr('id', 'diagonal')
+    .attr('patternUnits', 'userSpaceOnUse')
+    .attr('width', 4)
+    .attr('height', 4)
+    .append('path')
+    .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
+    .attr('stroke', 'DarkSlateGray')
+    .attr('stroke-width', 1);
+svg.append("defs").append("pattern")
+    .attr('id', 'stalk')
+    .attr('patternUnits', 'userSpaceOnUse')
+    .attr('width', 8)
+    .attr('height', 8)
+    .append('path')
+    .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
+    .attr('stroke', 'Gray')
+    .attr('stroke-width', 0.5);
+
+
+
+}
+
+updateGraph(JSON.chr1);
+
+d3.select('#opts')
+  .on('change', function() {
+   console.log(event);
+});
+
+
+
+</script>
+
+<noscript>
+    <h3>JavaScript is Required</h3>
+</noscript>
+
+<select id = "opts">
+<option value="JSON.chr1"selected="selected">data1</option>
+<option value="JSON.chr10">data2</option>
+<option value="JSON.chr2">data3</option>
+
+
+</body>
+
+
+</html>
