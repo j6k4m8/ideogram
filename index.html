@@ -238,6 +238,24 @@
         var W = w-(2*padding);
         var H = h-(2*padding);
 
+        options = {
+            geometry: {
+                w: 900,
+                h: 100,
+                padding: 30,
+                W: w-(2*padding),
+                H: h-(2*padding)
+            },
+            display: {
+                stain: 'default'
+            }
+        };
+
+        function restain(st) {
+            options.display.stain = st;
+            updateGraph(data.chr10);
+        };
+
 
         function updateGraph(cytoband) {
 
@@ -307,13 +325,13 @@
 
             var pTelo = chrGroup.append("defs").append("linearGradient").attr("id", "pTelo")
                 .attr("x1", "0%").attr("x2", "100%").attr("y1", "0%").attr("y2", "0%");
-                pTelo.append("stop").attr("offset", "50%").style("stop-color", (stains[chosenStain].telo));
+                pTelo.append("stop").attr("offset", "50%").style("stop-color", (stains[options.display.stain].telo));
                 pTelo.append("stop").attr("offset", "50%").style("stop-color", "white");
 
             var qTelo = chrGroup.append("defs").append("linearGradient").attr("id", "qTelo")
                 .attr("x1", "0%").attr("x2", "100%").attr("y1", "0%").attr("y2", "0%");
                 qTelo.append("stop").attr("offset", "50%").style("stop-color", "white");
-                qTelo.append("stop").attr("offset", "50%").style("stop-color", (stains[chosenStain].telo));
+                qTelo.append("stop").attr("offset", "50%").style("stop-color", (stains[options.display.stain].telo));
 
             chrGroup.append("circle")
                 .attr("cx", padding)
@@ -331,7 +349,7 @@
             var tip = d3.tip()
                 .attr('class', 'd3-tip')
                 .offset([-10, 0])
-                .html(function(d) {return "<span style='color:" + stains[chosenStain]['telo'] + "'>" + d.alias + "</span>";});
+                .html(function(d) {return "<span style='color:" + stains[options.display.stain]['telo'] + "'>" + d.alias + "</span>";});
 
             chrGroup.call(tip);
 
@@ -347,7 +365,7 @@
                 .attr("width", function(d) {
                     return (d.end-d.start) * (W/chrLength);
                 })
-                .style("fill", function(d) { return stains[chosenStain][d.stain] })
+                .style("fill", function(d) { return stains[options.display.stain][d.stain] })
                 .on('mouseover', tip.show)
                 .on('mouseout', tip.hide);
 
@@ -358,11 +376,11 @@
 
             var lineGraph = chrGroup.append("path")
                 .attr("d", lineFunction(cent[0]))
-                .attr('fill', stains[chosenStain]['stalk']);
+                .attr('fill', stains[options.display.stain]['stalk']);
 
             lineGraph = chrGroup.append("path")
                 .attr("d", lineFunction(cent[1]))
-                .attr('fill', stains[chosenStain]['stalk']);
+                .attr('fill', stains[options.display.stain]['stalk']);
 
             lineGraph = chrGroup.append("path")
                 .attr("d", lineFunction(outlineP))
