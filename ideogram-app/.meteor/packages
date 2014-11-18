@@ -10,4 +10,5 @@ less
 jquery
 mrt:bootstrap-3
 gcampax:accounts-dropbox
+iron:router
 
