@@ -1,0 +1,1280 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"subscript",
+				"Subscriptions"
+			],
+			[
+				"userI",
+				"_userId"
+			],
+			[
+				"re",
+				"redrawBaseImage"
+			],
+			[
+				"mous",
+				"mouse	mouseReleased"
+			],
+			[
+				"styl",
+				"font-style"
+			],
+			[
+				"WtB",
+				"WhatToBring"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"COllectionVi",
+				"CollectionView"
+			],
+			[
+				"Bac",
+				"Backbone.Marionette"
+			],
+			[
+				"COllectionView",
+				"Marionette.CollectionView"
+			],
+			[
+				"itemview",
+				"Marionette.ItemView"
+			],
+			[
+				"maritem",
+				"Marionette.ItemView"
+			],
+			[
+				"end",
+				"end	end (ERB)"
+			],
+			[
+				"clever",
+				"clever-container"
+			],
+			[
+				"page",
+				"squishOnLastPage"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 360.0,
+		"selected_items":
+		[
+			[
+				"scheme",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ss",
+				"Set Syntax: Makefile"
+			],
+			[
+				"setsynfil",
+				"Set Syntax: Batch File"
+			],
+			[
+				"ssyn mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"gtbmk",
+				"SublimeBookmarks: Goto Bookmark"
+			],
+			[
+				"destroy",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"origa",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"git checkout",
+				"Git: Checkout Tag"
+			],
+			[
+				"ssch",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"ssche",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"origam",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"0",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"1 ",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"0 ",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"",
+				"ASCII Decorator: Default Font"
+			],
+			[
+				"sspro",
+				"Set Syntax: Processing"
+			],
+			[
+				"pastry",
+				"Text Pastry: Command Line"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"gitblame",
+				"Git: Blame"
+			],
+			[
+				"blame",
+				"Set Syntax: Git Blame"
+			],
+			[
+				"git diff",
+				"Git: Diff All Files"
+			],
+			[
+				"gitst",
+				"Git: Status"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"gitstatu",
+				"Git: Status"
+			],
+			[
+				"diff",
+				"Git: Diff All Files"
+			],
+			[
+				"sscheme",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"sshtm",
+				"Set Syntax: HTML"
+			],
+			[
+				"ssless",
+				"Set Syntax: LESS"
+			],
+			[
+				"latex",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"asciifo",
+				"ASCII Decorator: Generate Font Test"
+			],
+			[
+				"gutter",
+				"GitGutter: Compare Against Branch"
+			],
+			[
+				"repl no",
+				"SublimeREPL: Node"
+			],
+			[
+				"figl",
+				"Figlet: Add Text"
+			],
+			[
+				"clear book",
+				"SublimeBookmarks: Remove All Bookmarks (Clear Bookmarks)"
+			],
+			[
+				"goto",
+				"SublimeBookmarks: Goto Bookmark"
+			],
+			[
+				"rbo",
+				"SublimeBookmarks: Remove A Bookmark"
+			],
+			[
+				"gitgi",
+				"GitGutter: Compare Against Commit"
+			],
+			[
+				"git",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"sscum",
+				"Set Syntax: Cucumber Steps"
+			],
+			[
+				"gitgut",
+				"GitGutter: Compare Against Branch"
+			],
+			[
+				"pref",
+				"Preferences: Settings - User"
+			],
+			[
+				"prefu",
+				"Preferences: Settings - User"
+			],
+			[
+				"prefus",
+				"Preferences: Settings - User"
+			],
+			[
+				"prefer",
+				"Preferences: Settings - Default"
+			],
+			[
+				"sche",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"preferenc",
+				"Preferences: Settings - Default"
+			],
+			[
+				"preferences",
+				"Preferences: Settings - User"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 470.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"scope",
+			"editor",
+			"scope",
+			"context",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/jordan/projects/ideogram/ideogram-app"
+	],
+	"file_history":
+	[
+		"/home/jordan/projects/meteor-shapeu/client/stylesheets/_global.less",
+		"/home/jordan/projects/meteor-shapeu/server/scheduling.js",
+		"/home/jordan/projects/meteor-shapeu/lib/moment.min.js",
+		"/home/jordan/projects/meteor-shapeu/server/groups.js",
+		"/home/jordan/projects/meteor-shapeu/lib/_vars.js",
+		"/home/jordan/projects/meteor-shapeu/client/stylesheets/chat.less",
+		"/home/jordan/projects/meteor-shapeu/server/emails.js",
+		"/home/jordan/projects/hophacks/sponsors.pdf",
+		"/home/jordan/projects/meteor-shapeu/client/stylesheets/groups.less",
+		"/home/jordan/projects/meteor-shapeu/server/payment.js",
+		"/home/jordan/projects/meteor-shapeu/client/templates/groups/view.html",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/groups/view.js",
+		"/home/jordan/projects/meteor-shapeu/lib/config.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/browserstack-webdriver/lib/test/data/pageWithOnBeforeUnloadMessage.html",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/phantomjs/lib/phantom/examples/arguments.coffee",
+		"/home/jordan/projects/meteor-shapeu/packages/accounts-ui-bootstrap-dropdown/accounts_ui.js",
+		"/home/jordan/projects/meteor-shapeu/client/stylesheets/_colormixin.less",
+		"/home/jordan/projects/meteor-shapeu/lib/Collections.js",
+		"/home/jordan/projects/meteor-shapeu/packages/iron-router/CONTRIBUTING.md",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/admin/groups.js",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/scheduling/proposals.js",
+		"/home/jordan/projects/meteor-shapeu/lib/routes.js",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/profile.js",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/admin/_main.js",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/groups/browse.js",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/admin/proposals.js",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/_config.js",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/scheduling/sessions.js",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/admin/sessions.js",
+		"/home/jordan/projects/meteor-shapeu/client/templates/admin/sessions.html",
+		"/home/jordan/projects/meteor-shapeu/client/templates/admin/admin.html",
+		"/home/jordan/projects/meteor-shapeu/lib/__env__.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/npm/node_modules/init-package-json/example/example-npm.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/web.browser/e3f110e624d7e282d7d0f84f94968174dd0ea22e.css",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/admin/users.js",
+		"/home/jordan/projects/meteor-shapeu/client/templates/admin/users.html",
+		"/home/jordan/projects/meteor-shapeu/settings.json",
+		"/home/jordan/projects/meteor-shapeu/run_server",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/browserstack-webdriver/docs/module_selenium-webdriver_http_util.html",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/npm/mongo/node_modules/mongodb/test/tests/functional/admin_mode_tests.js",
+		"/home/jordan/projects/meteor-shapeu/client/stylesheets/admin.less",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/accounts.js",
+		"/home/jordan/projects/meteor-shapeu/public/fonts/aleo/Aleo-Light.otf",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/npm/mrgalaxy:stripe/node_modules/stripe/lib/resources/CustomerSubscriptions.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/npm/lib/substack.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/source-map/build/suffix-browser.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/source-map/build/suffix-utils.jsm",
+		"/home/jordan/projects/meteor-shapeu/server/_config.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/sqlite3/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/example/usage.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/npm/node_modules/sha/package.json",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/npm/ddp/node_modules/sockjs/examples/haproxy.cfg",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/packages/sha.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/cordova/node_modules/cordova-lib/node_modules/cordova-js/tasks/lib/strip-header.js",
+		"/home/jordan/projects/meteor-shapeu/packages/iron-dynamic-template/.build/browser/packages/iron-dynamic-template.js",
+		"/home/jordan/projects/meteor-shapeu/packages/iron-core/lib/iron_core.js",
+		"/home/jordan/projects/bader",
+		"/home/jordan/projects/ideogram/index.html",
+		"/home/jordan/projects/meteor-shapeu/client/templates/email/notifications.html",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/chat.js",
+		"/home/jordan/projects/meteor-shapeu/client/templates/scheduling/proposals.html",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/helpers.js",
+		"/home/jordan/projects/meteor-shapeu/client/templates/nav.html",
+		"/home/jordan/projects/meteor-shapeu/client/templates/main.html",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/node_modules/phantomjs/node_modules/unzip/node_modules/binary/node_modules/chainsaw/node_modules/traverse/examples/leaves.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/node_modules/http-proxy/node_modules/eventemitter3/leak.js",
+		"/home/jordan/projects/meteor-shapeu/packages/iron-layout/blaze_layout_errors.js",
+		"/home/jordan/projects/meteor-shapeu/packages/blaze-layout/LICENSE.txt",
+		"/home/jordan/projects/meteor-shapeu/client/templates/splash.html",
+		"/home/jordan/projects/meteor-shapeu/client/templates/admin/proposals.html",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/node_modules/kexec/package.json",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/node_modules/kexec/src/kexec.cc",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/npm/minifiers/node_modules/uglify-js/node_modules/optimist/index.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/node_modules/jsdoc/plugins/overloadHelper.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/db/journal/j._0",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/node_modules/browserstack-webdriver/lib/test/data/coordinates_tests/page_with_empty_element.html",
+		"/home/jordan/projects/meteor-shapeu/client/templates/groups/browse.html",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/node_modules/npm/node_modules/node-gyp/gyp/buildbot/buildbot_run.py",
+		"/home/jordan/projects/meteor-shapeu/README.md",
+		"/home/jordan/projects/meteor-shapeu/server/users.js",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/splash.js",
+		"/home/jordan/projects/meteor-shapeu/client/stylesheets/splash.less",
+		"/home/jordan/projects/meteor-shapeu/server/memberships.js",
+		"/home/jordan/projects/meteor-shapeu/packages/iron-router/.build/npm/node_modules/connect/node_modules/multiparty/test/fixture/js/no-filename.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/browserstack-webdriver/docs/class_goog_net_XmlHttpFactory.html",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/npm/ddp/node_modules/faye-websocket/spec/faye/websocket/client_spec.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/browserstack-webdriver/lib/test/data/click_source.html",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/jsdoc/cli.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/browserstack-webdriver/lib/test/data/clickEventPage.html",
+		"/home/jordan/projects/meteor-shapeu/client/javascripts/payment.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/esprima/ChangeLog",
+		"/home/jordan/projects/meteor-shapeu/.meteor/packages",
+		"/home/jordan/projects/meteor-shapeu/client/templates/chat.html",
+		"/home/jordan/projects/meteor-shapeu/server/lib/../../lib/__env__.js",
+		"/home/jordan/projects/meteor-shapeu/server/lib/__env__.js",
+		"/home/jordan/.tmux.conf",
+		"/home/jordan/tmux_downspeed.sh",
+		"/home/jordan/tmux_upspeed.sh",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/browserstack-webdriver/lib/goog/net/wrapperxmlhttpfactory.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/browserstack-webdriver/docs/class_webdriver_http_Request.html",
+		"/home/jordan/projects/meteor-shapeu/packages/accounts-ui-bootstrap-dropdown/.build.accounts-ui-bootstrap-dropdown/web.browser.json",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/phantomjs/install.js",
+		"/home/jordan/projects/meteor-shapeu/packages/iron-router/.npm/package/npm-shrinkwrap.json",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Number/is-nan.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/packages/service-configuration.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/packages/reactive-dict.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/esprima/test/3rdparty/estraverse.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/esprima/assets/orion/contentassist/esprimaVisitor.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/eachline/eachline.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/packages/less.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/npm/logging/node_modules/cli-color/.lint",
+		"/home/jordan/projects/meteor-shapeu/.meteor/.gitignore",
+		"/home/jordan/projects/meteor-shapeu/client/templates/accounts.html",
+		"/home/jordan/projects/meteor-shapeu/client/stylesheets/scheduling.less",
+		"/home/jordan/projects/meteor-shapeu/client/templates/scheduling/sessions.html",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/web.browser/app/client/templates/profile/template.home.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/npm/mongo/node_modules/mongodb/test/tests/repl_set/failover_query_tests.js",
+		"/home/jordan/projects/meteor-shapeu/TODO.md",
+		"/home/jordan/Documents/healthify/tmp/jasmine/assets/application.js",
+		"/home/jordan/projects/meteor-shapeu/server/admin.js",
+		"/home/jordan/projects/meteor-shapeu/client/stylesheets/accounts.less",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/ctl/node_modules/semver/foot.js",
+		"/home/jordan/projects/meteor-shapeu/.meteor/local/build/programs/server/npm/minifiers/node_modules/css-parse/test/cases/font-face.css",
+		"/home/jordan/.config/sublime-text-3/Packages/Super Calculator/Default (Linux).sublime-keymap",
+		"/home/jordan/.config/sublime-text-3/Packages/Super Calculator/Super Calculator.sublime-settings",
+		"/home/jordan/projects/meteor-shapeu/server/chat.js",
+		"/home/jordan/projects/meteor-shapeu/client/templates/profile/home.html",
+		"/home/jordan/projects/meteor-shapeu/client/templates/admin/groups.html",
+		"/home/jordan/projects/meteor-shapeu/client/templates/admin/memberships.html"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"-.meteor/*,-packages/*",
+			"-.meteor/*",
+			"",
+			"/home/jordan/mednews",
+			"",
+			"*.js",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"chosenStain",
+			"staging",
+			"chat-mod",
+			".container",
+			"container",
+			"background-si",
+			"prettifyDate",
+			"Email.send",
+			"Proposal",
+			"bronze",
+			"shapeu_silver",
+			"bronze",
+			"replace",
+			"alpha",
+			"cancelSubsc",
+			"data[0]",
+			"switchCus",
+			"view-group",
+			"is_trainer",
+			"list_proposals",
+			"swole",
+			"float:",
+			"position: ab",
+			".label-",
+			"h2",
+			"sm-8",
+			"49",
+			"5<sup>",
+			"is_subscribed",
+			"ShapeU v.a.0.0.15",
+			" | ShapeU v.a.0.0.15",
+			"0.0.",
+			"subscri",
+			"changeS",
+			"changeSub",
+			"subscribe(",
+			"subscribe",
+			"textbox",
+			"Template.admin_show_user_row",
+			"admin_users_tab",
+			"cancelSubscr",
+			"<style>",
+			"sessions",
+			"Proposals",
+			"proposals",
+			"Proposals",
+			"proposals",
+			"groups",
+			"b>",
+			"b",
+			"<sup>",
+			"logEmail",
+			"scrollChat",
+			"scrollChatToBottom",
+			"contact",
+			"var group = Groups.findOne(gId);\n        if (!group) { throw new Meteor.Error(500, 'Invalid group.'); }\n",
+			"membership",
+			"hips.find",
+			"find",
+			"Memberships",
+			"newProposal",
+			"newPro",
+			"match failed",
+			"Match",
+			"<title",
+			"removeUserFrom",
+			"leave this group",
+			"Sending:",
+			"transX",
+			"Join This Group",
+			"isDeve",
+			"Your payment",
+			"removeUserFromGroup",
+			"join this group",
+			"memberships.remove",
+			"sessionId",
+			"addUserToSession:",
+			"ToSession",
+			"'checkout",
+			"<div class=\"well snazzy view-group-sessions\">\n                            <div class=\"clearfix\">\n                                <h2 class=\"snazzy-title\">Schedule</h2>\n                                <h3>Upcoming Sessions</h3>\n                                <div class=\"list-sessions\">\n                                    {{> list_sessions_for_group}}\n                                </div>\n                                <h3>Propose a Time</h3>\n                                <div class=\"col-sm-6 col-md-6 make-proposals\">\n                                    {{> propose_new_time_for_group}}\n                                </div>\n                                <div class=\"col-sm-6 col-md-6 list-proposals\">\n                                    {{> list_proposals_for_group}}\n                                </div>\n                            </div>\n                        </div>",
+			"addUserToGroup",
+			".join-this-group",
+			"trainer",
+			"has_trainer",
+			"promoteTrainer",
+			".promote-trainer",
+			"#jhu-email",
+			"form",
+			"'click #access-code-submit': function() {\n        if ($(\"#access-code\").val() == \"platinumpass\" || $(\"#access-code\").val() == \"goldpass\"){\n            $(\"#login-dropdown-list\").css(\"display\", \"block\");\n            $(\".access-pass\").fadeOut(300);\n        }\n    },",
+			"'keyup #access-code': function(ev) {\n        if (ev.keyCode == 13) {\n            if ($(\"#access-code\").val() == \"platinumpass\" || $(\"#access-code\").val() == \"goldpass\"){\n                $(\"#login-dropdown-list\").css(\"display\", \"block\");\n                $(\".access-pass\").fadeOut(300);\n            }\n        }",
+			"LLC",
+			"exampleInputEmail1",
+			"modal",
+			"viewing_group",
+			"chat-",
+			"chat-co",
+			"sk_live_UJpkRDlfpuSA2p4pXIi2Q9ar",
+			"keys.stripe",
+			"routes",
+			"Uh ",
+			"Uh oh,",
+			"Meteor.publish('groups",
+			"getPublicGroups",
+			"refresh",
+			"refreshList",
+			".leave-this-group",
+			"disat",
+			"bootbox.conf",
+			"bootbox.",
+			"default_not_logged",
+			"display: none;",
+			"removeUser",
+			"removeUserFromGroup",
+			"confirm",
+			"leave",
+			".leave-this-gr",
+			"Leave this",
+			"addUserTo",
+			"Logged Out",
+			"sendEma",
+			"p",
+			"events = {",
+			"makeUser",
+			"admin",
+			"seedify",
+			"No groups found",
+			"attend-this-session",
+			"charges"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"isWebsite"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 104.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 147.0
+	},
+	"output.sftp":
+	{
+		"height": 116.0
+	},
+	"project": "ideogram.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"payment",
+				"server/payment.js"
+			],
+			[
+				"groups",
+				"server/groups.js"
+			],
+			[
+				"colorm",
+				"client/stylesheets/_colormixin.less"
+			],
+			[
+				"groupview",
+				"client/javascripts/groups/view.js"
+			],
+			[
+				"env",
+				"lib/__env__.js"
+			],
+			[
+				"admi",
+				"client/templates/admin/admin.html"
+			],
+			[
+				"config",
+				"server/_config.js"
+			],
+			[
+				"help",
+				"client/javascripts/helpers.js"
+			],
+			[
+				"sessions",
+				"client/javascripts/scheduling/sessions.js"
+			],
+			[
+				"collecti",
+				"lib/Collections.js"
+			],
+			[
+				"payme",
+				"server/payment.js"
+			],
+			[
+				"collect",
+				"lib/Collections.js"
+			],
+			[
+				"browsejs",
+				"client/javascripts/groups/browse.js"
+			],
+			[
+				"groups/",
+				"client/templates/groups/browse.html"
+			],
+			[
+				"groupsview",
+				"client/templates/groups/view.html"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				"cnfig",
+				"server/_config.js"
+			],
+			[
+				"clisess",
+				"client/javascripts/scheduling/sessions.js"
+			],
+			[
+				"paymen",
+				"server/payment.js"
+			],
+			[
+				"vars",
+				"lib/_vars.js"
+			],
+			[
+				"",
+				"README.md"
+			],
+			[
+				"routes",
+				"lib/routes.js"
+			],
+			[
+				"_conf",
+				"server/_config.js"
+			],
+			[
+				"_config",
+				"server/_config.js"
+			],
+			[
+				"accjs",
+				"client/javascripts/accounts.js"
+			],
+			[
+				"groupsbrows",
+				"client/templates/groups/browse.html"
+			],
+			[
+				"accountsht",
+				"client/templates/accounts.html"
+			],
+			[
+				"nav",
+				"client/templates/nav.html"
+			],
+			[
+				"main",
+				"client/templates/main.html"
+			],
+			[
+				"sessionshtml",
+				"client/templates/scheduling/sessions.html"
+			],
+			[
+				"accountshtml",
+				"client/templates/accounts.html"
+			],
+			[
+				"accountsjs",
+				"client/javascripts/accounts.js"
+			],
+			[
+				"chathtml",
+				"client/templates/chat.html"
+			],
+			[
+				"profile",
+				"client/javascripts/profile.js"
+			],
+			[
+				"collec",
+				"lib/Collections.js"
+			],
+			[
+				"scheduling",
+				"server/scheduling.js"
+			],
+			[
+				"conf",
+				"server/_config.js"
+			],
+			[
+				"var",
+				"lib/_vars.js"
+			],
+			[
+				"sessionjs",
+				"client/javascripts/scheduling/sessions.js"
+			],
+			[
+				"scheduht",
+				"client/templates/scheduling/proposals.html"
+			],
+			[
+				"accountshtm",
+				"client/templates/accounts.html"
+			],
+			[
+				"accounts",
+				"client/javascripts/accounts.js"
+			],
+			[
+				"chat.html",
+				"client/templates/chat.html"
+			],
+			[
+				"chatjs",
+				"client/javascripts/chat.js"
+			],
+			[
+				"collection",
+				"lib/Collections.js"
+			],
+			[
+				"sessions.",
+				"client/javascripts/scheduling/sessions.js"
+			],
+			[
+				"proposalsjs",
+				"client/javascripts/admin/proposals.js"
+			],
+			[
+				"sessionsjs",
+				"client/javascripts/scheduling/sessions.js"
+			],
+			[
+				"proposalhtml",
+				"client/templates/admin/proposals.html"
+			],
+			[
+				"lib/vars",
+				"lib/_vars.js"
+			],
+			[
+				"serversched",
+				"server/scheduling.js"
+			],
+			[
+				"navless",
+				"client/stylesheets/nav.less"
+			],
+			[
+				"schedproposals",
+				"client/javascripts/scheduling/proposals.js"
+			],
+			[
+				"propo",
+				"client/templates/admin/proposals.html"
+			],
+			[
+				"grouphtml",
+				"client/templates/groups/view.html"
+			],
+			[
+				"chatht",
+				"client/templates/chat.html"
+			],
+			[
+				"router",
+				"packages/iron-router/lib/router.js"
+			],
+			[
+				"users",
+				"client/javascripts/admin/users.js"
+			],
+			[
+				"chat.js",
+				"client/javascripts/chat.js"
+			],
+			[
+				"schedulingless",
+				"client/stylesheets/scheduling.less"
+			],
+			[
+				"client/",
+				"client/javascripts/scheduling.js"
+			],
+			[
+				"schedu",
+				"client/templates/scheduling/proposals.html"
+			],
+			[
+				"groupjs",
+				"client/javascripts/admin/groups.js"
+			],
+			[
+				"mainht",
+				"client/templates/main.html"
+			],
+			[
+				"admin",
+				"client/stylesheets/admin.less"
+			],
+			[
+				"servchat",
+				"server/chat.js"
+			],
+			[
+				"schedht",
+				"client/templates/scheduling/proposals.html"
+			],
+			[
+				"bootstrap",
+				"packages/bootstrap-3/bootstrap-3/css/bootstrap.css"
+			],
+			[
+				"bootst",
+				"packages/bootstrap-3/bootstrap-override.css"
+			],
+			[
+				"coll",
+				"lib/Collections.js"
+			],
+			[
+				"grouht",
+				"client/templates/groups.html"
+			],
+			[
+				"chatle",
+				"client/stylesheets/chat.less"
+			],
+			[
+				"accounthtml",
+				"client/templates/accounts.html"
+			],
+			[
+				"adminle",
+				"client/stylesheets/admin.less"
+			],
+			[
+				"member",
+				"server/memberships.js"
+			],
+			[
+				"group",
+				"server/groups.js"
+			],
+			[
+				"cadminjs",
+				"client/javascripts/admin.js"
+			],
+			[
+				"admijs",
+				"server/admin.js"
+			],
+			[
+				"adminht",
+				"client/templates/admin.html"
+			],
+			[
+				"chatless",
+				"client/stylesheets/chat.less"
+			],
+			[
+				"clichatjs",
+				"client/javascripts/chat.js"
+			],
+			[
+				"chat",
+				"client/stylesheets/chat.less"
+			],
+			[
+				"groupsjs",
+				"server/groups.js"
+			],
+			[
+				"grouphtm",
+				"client/templates/groups.html"
+			],
+			[
+				"roupsjs",
+				"client/javascripts/groups.js"
+			],
+			[
+				"groujs",
+				"client/javascripts/groups.js"
+			],
+			[
+				"route",
+				"lib/routes.js"
+			],
+			[
+				"admn",
+				"client/templates/admin.html"
+			],
+			[
+				"adminjs",
+				"client/javascripts/admin.js"
+			],
+			[
+				"gitignore",
+				"packages/.gitignore"
+			],
+			[
+				"gitig",
+				".meteor/.gitignore"
+			],
+			[
+				"rotes",
+				"lib/routes.js"
+			],
+			[
+				"sergro",
+				"server/groups.js"
+			],
+			[
+				"navht",
+				"client/templates/nav.html"
+			],
+			[
+				"less",
+				"client/stylesheets/meteor-van.less"
+			],
+			[
+				"reserva",
+				"client/javascripts/reservations.js"
+			],
+			[
+				"reservat",
+				"server/reservations.js"
+			],
+			[
+				"clireser",
+				"client/javascripts/reservations.js"
+			],
+			[
+				"con",
+				"packages/iron-router/CONTRIBUTING.md"
+			],
+			[
+				"views",
+				"rentals/views.py"
+			],
+			[
+				"url",
+				"rentals/urls.py"
+			],
+			[
+				"forms",
+				"rentals/forms.py"
+			],
+			[
+				"setti",
+				"vans/settings.py"
+			],
+			[
+				"apphtml",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"groupname",
+				"app/views/templates/_group_name.html.erb"
+			],
+			[
+				"usercon",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"usecon",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"homecon",
+				"app/controllers/home_controller.rb"
+			],
+			[
+				"appcon",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"homeht",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"mouser",
+				"app/models/user.rb"
+			],
+			[
+				"appcss",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"usershow",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"groucon",
+				"app/controllers/groups_controller.rb"
+			],
+			[
+				"muser",
+				"app/models/user.rb"
+			],
+			[
+				"appl",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"css",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"applihtm",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"groupcon",
+				"app/controllers/groups_controller.rb"
+			],
+			[
+				"groupshow",
+				"app/views/groups/show.html.erb"
+			],
+			[
+				"index",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"reade",
+				"README.rdoc"
+			],
+			[
+				"modelgroup",
+				"app/models/group.rb"
+			],
+			[
+				"moduser",
+				"app/models/user.rb"
+			],
+			[
+				"applcon",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"add",
+				"db/migrate/20140716002605_add_name_to_groups.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/projects/hophacks.sublime-project"
+			],
+			[
+				"b1",
+				"~/projects/b17.sublime-project"
+			],
+			[
+				"matel",
+				"~/projects/matelsky.sublime-project"
+			],
+			[
+				"matelsk",
+				"~/projects/matelsky.sublime-project"
+			],
+			[
+				"hoph",
+				"~/servers/hophacks.sublime-project"
+			],
+			[
+				"hop",
+				"~/servers/hophacks.sublime-project"
+			],
+			[
+				"myn",
+				"~/projects/myne.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 324.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
